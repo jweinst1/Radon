@@ -1,12 +1,16 @@
 #ifndef RAD_OBJECT_H
 #define RAD_OBJECT_H
 
+#include "Radon.h"
+
 //type signature for primitive types
 enum RadType
 {
 	RadType_Int,
 	RadType_String,
-	RadType_Bool
+	RadType_Bool,
+	RadType_Reaction,
+	RadType_Stream
 };
 
 class RadObject
@@ -16,7 +20,6 @@ private:
 public:
 	RadObject();
 	~RadObject();
-	RadObject call();
 
 	RadType getType()
 	{

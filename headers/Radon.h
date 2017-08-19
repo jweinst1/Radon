@@ -3,6 +3,7 @@
 
 //main Radon header file for embedding in other programs etc.
 
-#include "Radon.h"
+#include "RadonObject.h"
+#include "RadonInt.h"
 
 #endif

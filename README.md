@@ -1,2 +1,2 @@
-# evol
-A cellular automatan engine
+# Radon
+A unique lisp dialect

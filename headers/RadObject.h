@@ -25,9 +25,9 @@ public:
 	{
 		return type;
 	}
-	void setType(RadType type)
+	void setType(RadType t)
 	{
-		type = type;
+		type = t;
 	}
 	
 };

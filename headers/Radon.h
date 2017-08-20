@@ -3,7 +3,16 @@
 
 //main Radon header file for embedding in other programs etc.
 
-#include "RadonObject.h"
-#include "RadonInt.h"
+#include <memory>
+#include <iostream>
+#include <vector>
+
+
+
+#include "RadObject.h"
+
+typedef std::shared_ptr<RadObject> RadPtr;
+
+#include "RadInt.h"
 
 #endif

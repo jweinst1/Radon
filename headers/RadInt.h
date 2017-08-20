@@ -5,40 +5,36 @@
 
 class RadInt : public RadObject
 {
-private:
-	long value;
 public:
+	long value;
+
 	RadInt(long value);
 
-	long getValue()
+	void operator += (long num)
 	{
-		return value;
+		value += num; 
 	}
 
-	void setValue(long value)
+	void operator -= (long num)
 	{
-		value = value;
+		value -= num;
 	}
 
-	void add(long amount)
+	void operator *= (long num)
 	{
-		value += amount;
+		value *= num;
 	}
 
-	void sub(long amount)
+	void operator /= (long num)
 	{
-		value -= amount;
+		value /= num;
 	}
 
-	void mul(long amount)
+	void operator %= (long num)
 	{
-		value *= amount;
+		value *= num;
 	}
 
-	void div(long amount)
-	{
-		if(amount) value /= amount;
-	}
 };
 
 #endif

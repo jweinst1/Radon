@@ -8,7 +8,11 @@ private:
 public:
 	RadStream();
 	~RadStream();
-	
+
+	void append(RadPtr rp)
+	{
+		items.push_back(rp);
+	}
 };
 
 #endif

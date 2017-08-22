@@ -10,6 +10,7 @@
 
 
 #include "RadObject.h"
+#include "RadReaction.h"
 
 typedef std::shared_ptr<RadObject> RadPtr;
 

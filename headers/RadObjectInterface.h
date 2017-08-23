@@ -8,6 +8,7 @@
 class RadObjectInterface
 {
 public:
+	RadType type;
 
 	virtual RadType getType() const;
 	virtual void setType(RadType t);
@@ -25,18 +26,24 @@ public:
 
 	virtual void div(RadObjectInterface roi);
 
+	virtual void rem(RadObjectInterface roi);
+
 	//stream methods
 	virtual void append(RadObjectInterface roi);
 	virtual void put(RadObjectInterface roi);
 	virtual void conCat(RadObjectInterface roi);
 	virtual RadObjectInterface first() const;
 	virtual RadObjectInterface last() const;
-
+	virtual void removeLast();
+	virtual void removeFirst();
+	virtual void at(RadObjectInterface roi) const;
 	virtual int length() const;
+
+
 
 	
 };
 
-typedef std::shared_ptr<RadObject> RadPtr;
+typedef std::shared_ptr<RadObjectInterface> RadPtr;
 
 #endif

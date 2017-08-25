@@ -48,8 +48,29 @@ public:
 class RadString : public RadObject
 {
 public:
-	
-	RadString();
+	std::string value;
+
+	RadString(std::string& str);
+
+	std::string getValue()
+	{
+		return value;
+	}
+
+	std::string& getRef()
+	{
+		return value;
+	}
+
+	const std::string& getConstRef()
+	{
+		return value;
+	}
+
+	void setValue(std::string& str)
+	{
+		value = str;
+	}
 	
 };
 

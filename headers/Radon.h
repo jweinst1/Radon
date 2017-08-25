@@ -8,11 +8,6 @@
 #include <vector>
 #include <string>
 
-#include "RadTypes.h"
-
-#include "RadObject.h"
-#include "RadReaction.h"
-
-#include "RadInt.h"
+#include "RadonObject.h"
 
 #endif

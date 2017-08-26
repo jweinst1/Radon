@@ -26,5 +26,5 @@ RadonObject* RadonInit::makeList(RadonObject* lst)
 
 void RadonInit::destroyAll(RadonObject* obj)
 {
-
+	if(obj->next) RadonInit::destroy(obj->next)
 }

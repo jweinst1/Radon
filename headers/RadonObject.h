@@ -27,6 +27,14 @@ struct RadonObject
 	};
 
 	RadonObject* next;
+	//constructors for chained construction
+	RadonObject(int i, RadonObject* next = nullptr): state(RadonObject::Int), _int(i), next(next) {}
+	
+	RadonObject(char ch, RadonObject* next = nullptr): state(RadonObject::Char), _char(ch), next(next) {}
+	
+	RadonObject(bool b, RadonObject* next = nullptr): state(RadonObject::Bool), _bool(b), next(next) {}
+	
+	RadonObject(RadonObject* lst, RadonObject* next = nullptr): state(RadonObject::List), _list(lst), next(next) {}
 };
 
 #endif

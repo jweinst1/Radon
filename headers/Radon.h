@@ -9,5 +9,6 @@
 #include <string>
 
 #include "RadonObject.h"
+#include "RadonInit.h"
 
 #endif

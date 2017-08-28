@@ -4,6 +4,6 @@ CPPLINK = -lstdc++
 INC_DIR = headers
 CFLAGS =  -c -Wall -I$(INC_DIR)
 
-objs: lib/RadInt.o
+objs: lib/TypeMaps.o
 
-lib/RadInt.o: objects/RadInt.cpp $(INC_DIR)/Radon.h; $(CC) $(CPPFLAGS) $(CFLAGS) objects/RadInt.cpp -o $@
+lib/TypeMaps.o: source/parser/TypeMaps.cpp $(INC_DIR)/Radon.h; $(CC) $(CPPFLAGS) $(CFLAGS) source/parser/TypeMaps.cpp -o $@

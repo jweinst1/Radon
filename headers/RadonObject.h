@@ -19,11 +19,15 @@ struct RadonObject
 		Char,
 		Bool,
 		List,
-		// directives
+		// Cmd Directives
 		CmdPrint,
+		CmdAssign,
+
+		// Reaction Directives
 		RxAdd,
 		RxSub,
-		RxMul
+		RxMul,
+		RxDiv
 	};
 	Type state;
 

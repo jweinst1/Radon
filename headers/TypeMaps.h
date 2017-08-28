@@ -6,18 +6,10 @@
 class RadTypeMap
 {
 private:
-	static std::unordered_map<std::string, RadonObject::Type> map = {
-		{"!print", RadonObject::CmdPrint},
-		{":+", RadonObject::RxAdd},
-		{":-", RadonObject::RxSub},
-		{":*", RadonObject::RxMul},
-		{":/", RadonObject::RxDiv}
-	};
+	static const std::unordered_map<std::string, RadonObject::Type> map;
 public:
-
-
-	RadonObject::Type getType(const std::string& token);
-	bool validate(const std::string& token);
+	static bool getType(const std::string& token, RadonObject::Type* typPnt);
+	static bool validate(const std::string& token);
 };
 
 #endif

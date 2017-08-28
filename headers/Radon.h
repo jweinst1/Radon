@@ -10,6 +10,6 @@
 #include <unordered_map>
 
 #include "RadonObject.h"
-
+#include "TypeMaps.h"
 
 #endif

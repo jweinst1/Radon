@@ -8,8 +8,10 @@
 #include <vector>
 #include <string>
 #include <unordered_map>
+#include <cctype>
 
 #include "RadonObject.h"
 #include "TypeMaps.h"
+#include "RadSynthesizer.h"
 
 #endif

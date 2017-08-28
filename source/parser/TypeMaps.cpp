@@ -23,6 +23,42 @@ bool RadTypeMap::getType(const std::string& token, RadonObject::Type* typPnt)
 
 }
 
+//Util is integer function
+bool RadTypeMap::isInt(const std::string& token) const
+{
+	if(token.length() > 1)
+	{
+		if(token[0] == '-')
+		{
+			switch(token[1])
+			{
+				case '0':
+					return false;
+					break;
+				case '1':
+				case '2':
+				case '3':
+				case '4':
+				case '5':
+				case '6':
+				case '7':
+				case '8':
+				case '9': return true; break;
+				default:
+					return false;
+			}
+		}
+		else
+		{
+			return true;
+		}
+	}
+	else
+	{
+		return std::isdigit(token[0]);
+	}
+}
+
 bool RadTypeMap::validate(const std::string& token)
 {
 	//not implemented

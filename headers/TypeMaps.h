@@ -9,6 +9,8 @@ private:
 	static const std::unordered_map<std::string, RadonObject::Type> map;
 public:
 	static bool getType(const std::string& token, RadonObject::Type* typPnt);
+
+	static bool isInt(const std::string& token) const ;
 	static bool validate(const std::string& token);
 };
 

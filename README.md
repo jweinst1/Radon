@@ -1,2 +1,3 @@
 # Radon
-A unique lisp dialect
+
+A reactive lisp.
